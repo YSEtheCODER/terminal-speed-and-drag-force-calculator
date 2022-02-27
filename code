@@ -1,0 +1,27 @@
+#drag calculator
+import math
+#drag contstant
+Cd=float(input("constant of drag:"))
+#consistency of air
+pRo=float(1.225)
+#velocity
+x=float(input("velocity:"))
+v=x**2
+
+#surface area
+a=float(input("surface area:"))
+
+
+D=((pRo*v)/2)*Cd*a
+
+print(D)
+print("is your drag force")
+
+#terminal speed calculator
+#weight(m.g)
+w=float(input("weight"))
+
+Vt=math.sqrt((2*w)/pRo*a*Cd)
+
+print(Vt)
+print("km/h is your terminal speed")
